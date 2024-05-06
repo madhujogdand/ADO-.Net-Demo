@@ -128,6 +128,7 @@
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -137,6 +138,7 @@
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSearch
             // 
@@ -146,6 +148,7 @@
             this.btnSearch.TabIndex = 11;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dataGridView1
             // 
@@ -154,17 +157,18 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(352, 209);
+            this.dataGridView1.Size = new System.Drawing.Size(648, 209);
             this.dataGridView1.TabIndex = 12;
             // 
             // btnShoAllList
             // 
-            this.btnShoAllList.Location = new System.Drawing.Point(497, 256);
+            this.btnShoAllList.Location = new System.Drawing.Point(626, 267);
             this.btnShoAllList.Name = "btnShoAllList";
             this.btnShoAllList.Size = new System.Drawing.Size(189, 31);
             this.btnShoAllList.TabIndex = 13;
             this.btnShoAllList.Text = "Show All Employees";
             this.btnShoAllList.UseVisualStyleBackColor = true;
+            this.btnShoAllList.Click += new System.EventHandler(this.btnShoAllList_Click);
             // 
             // btnCancel
             // 
@@ -180,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 331);
+            this.ClientSize = new System.Drawing.Size(1185, 424);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnShoAllList);
             this.Controls.Add(this.dataGridView1);
@@ -197,7 +201,7 @@
             this.Controls.Add(this.label);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Employee Form";
+            this.Text = "Connected Demo";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
